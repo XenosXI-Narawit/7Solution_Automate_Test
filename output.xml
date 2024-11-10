@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.0 on win32)" generated="2024-11-10T19:43:55.842852" rpa="false" schemaversion="5">
+<suite id="s1" name="Automate Test 7Solution" source="C:\Users\user\Coding_Python\Automate_Test\Automate_Test_7Solution.robot">
+<test id="s1-t1" name="Open Browser Test" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-10T19:43:56.042992" level="INFO">Opening browser 'chrome' to base url 'https://xn--m3ca1athe9asc7b2b6iqe.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-10T19:43:56.042992" elapsed="3.929487"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-10T19:43:59.972479" elapsed="0.040383"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-10T19:44:30.014021" level="INFO">Slept 30 seconds.</msg>
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-10T19:44:00.013859" elapsed="30.000162"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN_CHECK_ELEMENT}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-10T19:44:30.014021" elapsed="0.023901"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-10T19:44:30.037922" level="INFO">Executing JavaScript:
+window.scrollTo(0, 0)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 0)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-10T19:44:30.037922" elapsed="0.005617"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${COOKIE_ACCEPT_BUTTON}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-10T19:44:30.043539" elapsed="0.020257"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-10T19:44:30.064841" level="INFO">Clicking element 'xpath=//span[contains(@class, 'text-body') and contains(@class, 'font-semibold') and text()='ยอมรับทั้งหมด']'.</msg>
+<arg>${COOKIE_ACCEPT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-10T19:44:30.063796" elapsed="0.058834"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOKCASH_BUTTON}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-10T19:44:30.123623" elapsed="0.021181"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-10T19:44:30.145800" level="INFO">Clicking element 'xpath://button[@data-testid='nok-more-nok-cash-icon']'.</msg>
+<arg>${NOKCASH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-10T19:44:30.144804" elapsed="0.061582"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-10T19:44:33.207548" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-10T19:44:30.207391" elapsed="3.000157"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOKCASH_INPUT_CASH}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-10T19:44:33.207548" elapsed="0.016474"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-10T19:44:33.225019" level="INFO">Typing text '105' into text field 'xpath://input[@data-testid='nok-cash-amount-input']'.</msg>
+<arg>${NOKCASH_INPUT_CASH}</arg>
+<arg>105</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-10T19:44:33.224022" elapsed="0.064961"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-10T19:44:36.290373" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-10T19:44:33.289980" elapsed="3.000393"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOKCASH_PAYMENT_BUTTON}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-10T19:44:36.290373" elapsed="0.015486"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-10T19:44:36.305859" level="INFO">Clicking element 'xpath://button[@data-testid='nok-cash-top-up-button']'.</msg>
+<arg>${NOKCASH_PAYMENT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-10T19:44:36.305859" elapsed="0.037396"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-10T19:44:39.344616" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-10T19:44:36.343255" elapsed="3.001361"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOKCASH_CANCEL_ORDER_BUTTON}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-10T19:44:39.344966" elapsed="0.016360"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-10T19:44:39.362525" level="INFO">Clicking element 'xpath://button[@data-testid='cancel-order-button']'.</msg>
+<arg>${NOKCASH_CANCEL_ORDER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-10T19:44:39.362525" elapsed="0.037300"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-10T19:44:47.401258" level="INFO">Slept 8 seconds.</msg>
+<arg>8s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-10T19:44:39.399825" elapsed="8.001433"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOKCASH_CONFIRM_CANCEL_ORDER_BUTTON}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-10T19:44:47.401740" elapsed="0.015928"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-10T19:44:47.418584" level="INFO">Clicking element 'xpath://button[@data-testid='option-modal-cancel-button']'.</msg>
+<arg>${NOKCASH_CONFIRM_CANCEL_ORDER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-10T19:44:47.418584" elapsed="0.036447"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-10T19:44:52.456501" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-10T19:44:47.456039" elapsed="5.000462"/>
+</kw>
+<doc>Test Cancel Order</doc>
+<status status="PASS" start="2024-11-10T19:43:56.042992" elapsed="56.413509"/>
+</test>
+<doc>Basic Web Test Example</doc>
+<status status="PASS" start="2024-11-10T19:43:55.843882" elapsed="56.613710"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Automate Test 7Solution">Automate Test 7Solution</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
